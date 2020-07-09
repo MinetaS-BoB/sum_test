@@ -1,4 +1,6 @@
-sum : main.o sum.o
+all : sum_test
+
+sum_test : main.o sum.o
 	g++ main.cpp sum.cpp -o sum
 
 sum.o : sum.cpp sum.h
